@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Page</title>
+</head>
+
+<body onload="authIndex()">
+    <div class="main-container">
+        <p>Welcome back! <img src="./hand_logo.png" alt="image"></p>
+        <h2>Sign up to your account</h2>
+        <div class="input-field">
+            <label for="uname">Your name</label>
+            <input type="text" name="uname" id="name">
+
+            <label for="uemail">Your email</label>
+            <input type="email" name="uemail" id="email">
+
+            <label for="upassword">Password</label>
+            <input type="password" name="upassword" id="password">
+
+            <label for="cpassword">Confirm Password</label>
+            <input type="text" name="cpassword" id="con_password">
+        </div>
+        <button onclick="createAccount()">CONTINUE</button>
+        <p class="error-message">Error: All fields are mandatory!</p>
+    </div>
+    <p class="no-account">Don't have an account? <a href="#"> Sign up</a></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
