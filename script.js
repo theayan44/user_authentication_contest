@@ -1,11 +1,11 @@
 function authIndex() {
     if (localStorage.getItem("token") !== null)
-        window.location.href = `${window.location.origin}/profile.html`;
+        window.location.href = `${window.location.href}profile.html`;
 }
 
 function authProfile() {
     if (localStorage.getItem("token") === null)
-        window.location.href = `${window.location.origin}/index.html`;
+        window.location.href = "https://theayan44.github.io/user_authentication_contest/";
     else
         showDetails();
 }
@@ -34,7 +34,7 @@ function createAccount() {
 
     alert("Sign up successful!");
 
-    window.location.href = `${window.location.origin}/profile.html`;
+    window.location.href = `${window.location.href}profile.html`;
 
 
 }
@@ -53,7 +53,7 @@ function showDetails() {
 
 function logout() {
     localStorage.clear();
-    window.location.href = `${window.location.origin}/index.html`;
+    window.location.href = "https://theayan44.github.io/user_authentication_contest/";
 }
 
 function generateString(length) {
