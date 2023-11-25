@@ -88,6 +88,7 @@ a {
     text-decoration: none;
     font-weight: lighter;
     color: rgb(84, 76, 240);
+    pointer-events: none;
 }
 
 @media only screen and (max-width: 500px) {
